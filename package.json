@@ -1,0 +1,43 @@
+{
+  "name": "ikf-phonebook",
+  "version": "1.0.0",
+  "description": "IKF PhoneBook - Centralized Contact Management System",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "start": "node server/index.js",
+    "db:setup": "node -e \"require('dotenv').config(); require('./server/utils/database').connectDatabase().then(() => process.exit(0)).catch(() => process.exit(1))\"",
+    "db:seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "contact-management",
+    "phonebook",
+    "ikf"
+  ],
+  "author": "IKF Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "googleapis": "^128.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
