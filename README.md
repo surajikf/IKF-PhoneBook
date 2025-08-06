@@ -3,7 +3,7 @@
 A centralized contact management system that allows users to import contacts from multiple sources, categorize contacts, handle duplicates, and store them in a secure, structured database.
 
 ## 🚀 Live Demo
-**https://surajikf.github.io/ai-tools**
+**https://surajikf.github.io/IKF-PhoneBook**
 
 ## ✅ Phase 1 Features Complete
 
@@ -33,8 +33,8 @@ A centralized contact management system that allows users to import contacts fro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/surajikf/ai-tools.git
-   cd ai-tools
+   git clone https://github.com/surajikf/IKF-PhoneBook.git
+   cd IKF-PhoneBook
    ```
 
 2. **Install dependencies**
@@ -101,7 +101,7 @@ Jane Smith, jane@company.com, 987-654-3210
 ## 🚀 Deployment
 
 The application is deployed on GitHub Pages at:
-**https://surajikf.github.io/ai-tools**
+**https://surajikf.github.io/IKF-PhoneBook**
 
 ## 📝 License
 
